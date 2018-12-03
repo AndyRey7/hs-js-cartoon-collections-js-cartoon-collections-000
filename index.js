@@ -1,18 +1,37 @@
 dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
 function dwarfRollCall(dwarves) {
-  var array = [];
+  var string = '';
   var i = 0;
   for (i = 0; i < dwarves.length; i++) {
-   array.push(`${i+1}. ${dwarves[i]}`) 
+   string+=`${i+1}. ${dwarves[i]} ` 
   }
-  return array;
+  return string;
 }
 
 function summonCaptainPlanet(planeteerCalls){
+let array =[];
+let i = 0;
+for (i = 0; i < planeteerCalls.length; i++) {
+ array.push(planeteerCalls[i].toUpperCase()+"!")
+}
+  return array
 }
 
 function longPlaneteerCalls(words) {
+let shortWords = ['wind', 'fire'];
+let assortedWords = ['earth', 'heart', 'water'];
+  if (words.length < 4) {
+    return false
+  } else if (words.length > 4) {
+    return true
+  }
 }
 
 function findTheCheese (foods) {
+for (let i = 0; i < foods.length; i++) {
+  if (foods[i] === 'cheddar') {
+    return 'cheddar'
+  }
+} 
+return 'no cheese!'
 }
