@@ -18,8 +18,6 @@ for (i = 0; i < planeteerCalls.length; i++) {
 }
 
 function longPlaneteerCalls(words) {
-let shortWords = ['wind', 'fire'];
-let assortedWords = ['earth', 'heart', 'water'];
   if (words.length < 4) {
     return false
   } else if (words.length > 4) {
